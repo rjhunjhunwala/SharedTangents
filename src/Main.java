@@ -21,5 +21,8 @@ public class Main {
             System.out.println("Tangent: " + i);
             System.out.println(tangents.get(i));
         }
+        for(int i = 0; i < 10000000; i++){
+            VectorMath.find_root(objective, gradient, guess);
+        }
     }
 }
